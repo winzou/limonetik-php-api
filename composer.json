@@ -1,0 +1,33 @@
+{
+  "name": "winzou/limonetik-php-api",
+  "type": "library",
+  "description": "PHP Client for Limonetik API",
+  "keyword": ["limonetik", "api", "php", "client", "payment"],
+  "homepage": "https://github.com/winzou/limonetik-php-api",
+  "license": "MIT",
+  "authors": [
+    {
+      "name":     "Alexandre Bacco",
+      "email":    "alexandre.bacco@gmail.com",
+      "homepage": "http://alex.bacco.fr"
+    }
+  ],
+  "require": {
+    "php":                ">=5.3.3",
+    "kriswallsmith/buzz": "~0.13"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "winzou\\Limonetik\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": { "spec\\winzou\\Limonetik\\": "spec/" }
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}
