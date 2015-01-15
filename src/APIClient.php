@@ -37,6 +37,17 @@ class APIClient
     const EXECCODE_HTTP_METHOD_NOT_ALLOWED = 9405;
     const EXECCODE_INTERNAL_ERROR          = 9500;
 
+    const STATUS_CREATED     = 'Created';
+    const STATUS_PROGRESS    = 'Payment_In_Progress';
+    const STATUS_ABORTED     = 'Aborted';
+    const STATUS_REFUSED     = 'Refused';
+    const STATUS_ERROR       = 'Error';
+    const STATUS_AUTHORIZED  = 'Authorized';
+    const STATUS_AUTHORIZING = 'Authorizing';
+    const STATUS_CANCELLED   = 'Cancelled';
+    const STATUS_CHARGED     = 'Charged';
+    const STATUS_REFUNDED    = 'Refunded';
+
     /**
      * @var ClientInterface
      */
