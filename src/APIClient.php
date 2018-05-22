@@ -244,6 +244,22 @@ class APIClient
     }
 
     /**
+     * @param int $eventId
+     *
+     * @return array
+     */
+    public function EventDetail($eventId)
+    {
+        $request = new Request();
+
+        if (null == $eventId) {
+            throw new InvalidArgumentException('eventId');
+        }
+
+        return $this->doRequest('Event/Detail', $request, array('Id' => $eventId))->getContentJson();
+    }
+
+    /**
      * @parem string  $controller
      * @param Request $request
      * @param array   $qs
